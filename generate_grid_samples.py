@@ -32,8 +32,8 @@ def generate_grid_data(csv_file_path = "grid_sample_1.csv", num_grids = 0):
             writer.writerow(header)
             print("Created", csv_file_path)
         
-        # rotation
         for i in range(num_grids):
+            # rotation
             xRot = random.uniform(-90, 90)
             xRot_rounded = format(xRot, ".2f")
             yRot = random.uniform(-180, 180)
