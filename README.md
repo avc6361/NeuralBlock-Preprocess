@@ -1,7 +1,13 @@
 # NeuralBlock-Preprocess
 A collection of helper scripts to process block grid data.
 
-Workflow steps:
+# Looking for a sample dataset?
+Premade datasets are available [on the releases page](https://github.com/avc6361/NeuralBlock-Preprocess/releases/)\
+`NeuralBlock-CombinedGrid.csv` contains raw data from the NeuralBlock mod.\
+`NeuralBlock-CombinedGrid_downcasted` contains downcasted data for model training.
+
+# Looking to create your own dataset?
+Follow these workflow steps:
 1. Get your data .csv from [the NeuralBlock mod](https://github.com/TheIcyStar/NeuralBlock) or use `generate_grid_samples.py` to create synthetic data.
 2. If you have multiple .csv files, use `combine_csvs.py`.
 3. "Downcast" the block types with `downcast_grid_samples.py`.
